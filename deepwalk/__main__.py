@@ -95,7 +95,7 @@ def process(args):
                      size=args.representation_size,
                      window=args.window_size, min_count=0, trim_rule=None, workers=args.workers)
 
-  model.wv.save_word2vec_format(args.output)
+  model.save_word2vec_format(args.output)
 
 
 def main():
